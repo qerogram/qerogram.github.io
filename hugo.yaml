@@ -1,0 +1,17 @@
+baseURL: "https://qerogram.github.io/"   # ← 여기 반드시 본인 아이디로 바꾸기!
+title: "Qerogram's Tech Blog"
+languageCode: "ko-kr"
+theme: ["PaperMod"]
+
+params:
+  description: "IT Technologies from a White-Hat Hacker's Perspective (Cloud, Development, Security, etc.)"
+  author: "Qerogram"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+
+menu:
+  main:
+    - name: About
+      url: /about
+      weight: 10
