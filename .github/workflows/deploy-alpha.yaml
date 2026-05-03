@@ -1,0 +1,18 @@
+name: Deploy Alpha to Vercel
+
+on:
+  push:
+    branches: [ alpha ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+      - name: Build
+        run: hugo --minify
+      # Vercel CLI로 배포 (Vercel Token 필요)
