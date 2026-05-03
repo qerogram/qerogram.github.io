@@ -1,6 +1,7 @@
 baseURL: "https://qerogram.github.io/"   # ← 여기 반드시 본인 아이디로 바꾸기!
 title: "Qerogram's Tech Blog"
-languageCode: "ko-kr"
+# languageCode: "ko-kr"
+locale: "ko-kr"
 theme: ["PaperMod"]
 
 params:
