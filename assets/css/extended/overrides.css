@@ -1,0 +1,53 @@
+/* ==================== 폭 제어 (본문 + 헤더 모두) ==================== */
+:root {
+    --main-width: 80%;     /* ← 원하는 값 (1400px or 1500px 추천) */
+    --nav-width: 100%;      /* ← 이 줄이 핵심! header-nav 전용 */
+}
+
+/* posts 본문 */
+.single .post,
+.post {
+    --main-width: 80% !important;
+    max-width: calc(var(--main-width) + 4rem) !important;
+    margin: 0 auto;
+}
+
+.post-content,
+.article-content {
+    max-width: 100% !important;
+}
+
+/* ==================== 헤더 완벽 정렬 ==================== */
+.header,
+.header__inner,
+.header-nav,
+.header .nav,
+.header .flex,
+.header .justify-between,
+.header .items-center {
+    max-width: var(--nav-width) !important;   /* --nav-width 사용 */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: var(--gap) !important;
+    padding-right: var(--gap) !important;
+}
+
+/* header-nav 내부 완전 꽉 차게 */
+.header-nav > *,
+.header .flex > * {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* 푸터 */
+.footer {
+    max-width: calc(var(--main-width) + 4rem) !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 코드·테이블 */
+pre, table, .highlight {
+    max-width: 100% !important;
+}

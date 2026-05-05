@@ -1,0 +1,50 @@
+{{ $seriesName := .Page.Params.series }}
+{{ $seriesOrder := .Page.Params.series_order }}
+
+<div class="custom-series-banner">
+  <div class="series-box">
+    <span class="series-icon">📚</span>
+    <div>
+      <strong>This post is part of the <em>{{ $seriesName | humanize | title }}</em> series</strong>
+      <span class="series-part">(Part {{ $seriesOrder }})</span>
+    </div>
+    <a href="/series/{{ $seriesName | urlize }}/" class="series-link">
+      View full series →
+    </a>
+  </div>
+</div>
+
+<style>
+.custom-series-banner {
+  margin: 2rem 0 2.5rem;
+}
+.series-box {
+  background: #1e2937;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+.series-icon {
+  font-size: 1.5rem;
+}
+.series-part {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+.series-link {
+  margin-left: auto;
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+.series-link:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+</style>
