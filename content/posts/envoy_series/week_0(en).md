@@ -1,6 +1,6 @@
 ---
 title: "Contributing to Envoy Proxy: A Journey with Redis Integration"
-date: 2026-05-03T12:00:00+09:00
+date: 2026-05-19T22:00:00+09:00
 draft: false
 tags: ["cncf", "envoy", "redis-proxy", "open-source"]
 series: "contribution_envoy"
