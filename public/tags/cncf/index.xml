@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cncf on Qerogram의 IT 삽질기 | Qerogram&#39;s IT Journal</title>
+    <link>http://localhost:1313/tags/cncf/</link>
+    <description>Recent content in cncf on Qerogram의 IT 삽질기 | Qerogram&#39;s IT Journal</description>
+    <generator>Hugo</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Sun, 03 May 2026 12:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/cncf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contributing to Envoy Proxy: A Journey with Redis Integration</title>
+      <link>http://localhost:1313/posts/envoy_series/week_0en/</link>
+      <pubDate>Sun, 03 May 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/envoy_series/week_0en/</guid>
+      <description>&lt;div class=&#34;custom-series-banner&#34;&gt;
+  &lt;div class=&#34;series-box&#34;&gt;
+    &lt;span class=&#34;series-icon&#34;&gt;📚&lt;/span&gt;
+    &lt;div&gt;
+      &lt;strong&gt;This post is part of the &lt;em&gt;Contribution envoy&lt;/em&gt; series&lt;/strong&gt;
+      &lt;span class=&#34;series-part&#34;&gt;(Part 1)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;http://localhost:1313/series/contribution_envoy/&#34; class=&#34;series-link&#34;&gt;
+      View full series →
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.custom-series-banner {
+  margin: 2rem 0 2.5rem;
+}
+.series-box {
+  background: #1e2937;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+.series-icon {
+  font-size: 1.5rem;
+}
+.series-part {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+.series-link {
+  margin-left: auto;
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+.series-link:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;overview-and-background&#34;&gt;Overview and Background&lt;/h1&gt;
+&lt;p&gt;This series documents &lt;strong&gt;how to implement and contribute Redis proxy features to Envoy Proxy&lt;/strong&gt;, covering the entire journey from development environment setup to merging a contribution into the Envoy project. Rather than theoretical knowledge, this series shares practical experience from a real-world production scenario.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Envoy Proxy 기여 여정 #1: 문제 발견과 이슈 분석</title>
+      <link>http://localhost:1313/posts/envoy_series/week_1/</link>
+      <pubDate>Sun, 03 May 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/envoy_series/week_1/</guid>
+      <description>&lt;div class=&#34;custom-series-banner&#34;&gt;
+  &lt;div class=&#34;series-box&#34;&gt;
+    &lt;span class=&#34;series-icon&#34;&gt;📚&lt;/span&gt;
+    &lt;div&gt;
+      &lt;strong&gt;This post is part of the &lt;em&gt;Contribution envoy&lt;/em&gt; series&lt;/strong&gt;
+      &lt;span class=&#34;series-part&#34;&gt;(Part 2)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;http://localhost:1313/series/contribution_envoy/&#34; class=&#34;series-link&#34;&gt;
+      View full series →
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.custom-series-banner {
+  margin: 2rem 0 2.5rem;
+}
+.series-box {
+  background: #1e2937;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+.series-icon {
+  font-size: 1.5rem;
+}
+.series-part {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+.series-link {
+  margin-left: auto;
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+.series-link:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;주제-및-배경&#34;&gt;주제 및 배경&lt;/h1&gt;
+&lt;p&gt;본 시리즈를 통해 제가 하고 싶은 것은, Envoy Proxy를 통해 Redis와 연결시 사용할 수 있는 기능을 구현하는 방법에 대해서 다루고자 합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Envoy Proxy 기여 여정 #2: 문제 발견과 이슈 분석</title>
+      <link>http://localhost:1313/posts/envoy_series/week_2/</link>
+      <pubDate>Sun, 03 May 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/envoy_series/week_2/</guid>
+      <description>&lt;div class=&#34;custom-series-banner&#34;&gt;
+  &lt;div class=&#34;series-box&#34;&gt;
+    &lt;span class=&#34;series-icon&#34;&gt;📚&lt;/span&gt;
+    &lt;div&gt;
+      &lt;strong&gt;This post is part of the &lt;em&gt;Contribution envoy&lt;/em&gt; series&lt;/strong&gt;
+      &lt;span class=&#34;series-part&#34;&gt;(Part 3)&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;http://localhost:1313/series/contribution_envoy/&#34; class=&#34;series-link&#34;&gt;
+      View full series →
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.custom-series-banner {
+  margin: 2rem 0 2.5rem;
+}
+.series-box {
+  background: #1e2937;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e2e8f0;
+  font-size: 1rem;
+}
+.series-icon {
+  font-size: 1.5rem;
+}
+.series-part {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-left: 4px;
+}
+.series-link {
+  margin-left: auto;
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+}
+.series-link:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+&lt;/style&gt;
+&lt;h1 id=&#34;주제-및-배경&#34;&gt;주제 및 배경&lt;/h1&gt;
+&lt;p&gt;본 시리즈를 통해 제가 하고 싶은 것은, Envoy Proxy를 통해 Redis와 연결시 사용할 수 있는 기능을 구현하는 방법에 대해서 다루고자 합니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
