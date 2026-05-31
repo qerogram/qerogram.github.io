@@ -47,6 +47,75 @@
     margin-right: auto;
 }
 
+/* ==================== Dracula Syntax Highlighting ==================== */
+/* Code block 배경 */
+pre, code, .chroma {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+}
+
+/* 줄 번호 */
+.chroma .ln {
+    color: #6272a4 !important;
+}
+
+/* 주석 */
+.chroma .c, .chroma .cm, .chroma .cp, .chroma .c1 {
+    color: #6272a4 !important;
+    font-style: italic;
+}
+
+/* 키워드 */
+.chroma .k, .chroma .kd, .chroma .kn {
+    color: #ff79c6 !important;
+}
+
+/* 문자열 */
+.chroma .s, .chroma .s1, .chroma .s2, .chroma .sb, .chroma .sc, .chroma .sd {
+    color: #f1fa8c !important;
+}
+
+/* 숫자 */
+.chroma .m, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .mo {
+    color: #bd93f9 !important;
+}
+
+/* 연산자 */
+.chroma .o, .chroma .p {
+    color: #f8f8f2 !important;
+}
+
+/* 함수 */
+.chroma .nf, .chroma .nc, .chroma .nn {
+    color: #50fa7b !important;
+}
+
+/* 변수/클래스 이름 */
+.chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi, .chroma .l {
+    color: #8be9fd !important;
+}
+
+/* 타입 */
+.chroma .nt, .chroma .nx {
+    color: #8be9fd !important;
+}
+
+/*強調された行 (highlighted line) */
+.chroma .hll {
+    background-color: #44475a !important;
+}
+
+/* 에러 */
+.chroma .err {
+    color: #ff5555 !important;
+}
+
+/* 경고 등 기타 */
+.chroma .w {
+    color: #f8f8f2 !important;
+}
+
+
 /* 코드·테이블 */
 pre, table, .highlight {
     max-width: 100% !important;

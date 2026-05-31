@@ -1,0 +1,137 @@
+/* Obsidian-like callout styling (rounded box only) */
+
+.callout {
+  --co-bg: rgba(0,0,0,0.04);
+  --co-fg: var(--content);
+  --co-accent: var(--primary);
+
+  margin: 1rem 0;
+  padding: 18px 18px;
+
+  border-radius: 8px;
+  background: var(--co-bg);
+  color: var(--co-fg);
+
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.dark .callout {
+  border-color: rgba(255,255,255,0.08);
+}
+
+/* Title row */
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 750;
+  font-size: 1.05em;
+  margin-bottom: 10px;
+
+  color: var(--co-accent);
+}
+
+.callout-title-text {
+  line-height: 1.1;
+}
+
+/* Icon (use ::before so you can keep HTML minimal) */
+.callout-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  /* subtle icon chip like Obsidian */
+  background: rgba(0,0,0,0.0);
+}
+
+.dark .callout-icon {
+  background: rgba(255,255,255,0.0);
+}
+
+.callout-icon::before {
+  content: "●";
+  font-size: 24px;
+  line-height: 1;
+  color: var(--co-accent);
+}
+
+/* Content spacing */
+.callout-content > :first-child { margin-top: 0; }
+.callout-content > :last-child  { margin-bottom: 0; }
+
+/* -------------------------------------------------------
+   Type palettes (approx. Obsidian default 느낌)
+   - light: pastel background
+   - dark: deeper, still soft background
+-------------------------------------------------------- */
+
+/* NOTE (blue) */
+.callout-note {
+  --co-accent: #2563eb;
+  --co-bg: rgba(37, 99, 235, 0.10);
+}
+.dark .callout-note {
+  --co-accent: #60a5fa;
+  --co-bg: rgba(96, 165, 250, 0.16);
+}
+.callout-note .callout-icon::before { content: "✎"; }
+
+/* TIP (teal) */
+.callout-tip {
+  --co-accent: #0f766e;
+  --co-bg: rgba(15, 118, 110, 0.10);
+}
+.dark .callout-tip {
+  --co-accent: #5eead4;
+  --co-bg: rgba(94, 234, 212, 0.14);
+}
+.callout-tip .callout-icon::before { content: "💧"; }
+
+/* IMPORTANT (teal-ish, slightly stronger) */
+.callout-important {
+  --co-accent: #0891b2;
+  --co-bg: rgba(8, 145, 178, 0.10);
+}
+.dark .callout-important {
+  --co-accent: #67e8f9;
+  --co-bg: rgba(103, 232, 249, 0.14);
+}
+.callout-important .callout-icon::before { content: "💧"; }
+
+/* CAUTION (orange) */
+.callout-caution {
+  --co-accent: #c2410c;
+  --co-bg: rgba(194, 65, 12, 0.10);
+}
+.dark .callout-caution {
+  --co-accent: #fdba74;
+  --co-bg: rgba(253, 186, 116, 0.14);
+}
+.callout-caution .callout-icon::before { content: "⚠"; }
+
+/* WARNING (orange, close to caution) */
+.callout-warning {
+  --co-accent: #d97706;
+  --co-bg: rgba(217, 119, 6, 0.10);
+}
+.dark .callout-warning {
+  --co-accent: #fbbf24;
+  --co-bg: rgba(251, 191, 36, 0.14);
+}
+.callout-warning .callout-icon::before { content: "⚠"; }
+
+/* ERROR (red/pink) - Hugo 기본 alert type엔 없지만 커스텀을 대비 */
+.callout-error {
+  --co-accent: #e11d48;
+  --co-bg: rgba(225, 29, 72, 0.10);
+}
+.dark .callout-error {
+  --co-accent: #fb7185;
+  --co-bg: rgba(251, 113, 133, 0.14);
+}
+.callout-error .callout-icon::before { content: "⚡"; }

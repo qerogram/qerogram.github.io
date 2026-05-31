@@ -1,0 +1,22 @@
+{{- /* Hugo blockquote render hook: supports Alerts like > [!NOTE] ... */ -}}
+
+{{- if eq .Type "alert" -}}
+  {{- $type := lower .AlertType -}}
+  {{- $title := .AlertTitle | default (upper $type) -}}
+
+  <div class="callout callout-{{ $type }}">
+    <div class="callout-title">
+      <span class="callout-icon" aria-hidden="true"></span>
+      <span class="callout-title-text">{{ $title }}</span>
+    </div>
+
+    {{- /* .Text: alert인 경우 '[!NOTE]' 제외 텍스트 */ -}}
+    <div class="callout-content">
+      {{ .Text }}
+    </div>
+  </div>
+{{- else -}}
+  <blockquote>
+    {{ .Text }}
+  </blockquote>
+{{- end -}}

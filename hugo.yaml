@@ -52,6 +52,14 @@ taxonomies:
   tag: "tags"
   category: "categories"
   
+markup:
+  highlight:
+    style: dracula
+    lineNos: true
+  goldmark:
+    renderer:
+      unsafe: true
+
 titleCaseStyle: none
 # 메뉴
 menu:
