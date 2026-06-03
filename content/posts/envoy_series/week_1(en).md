@@ -1,7 +1,7 @@
 ---
 title: "Contributing to Envoy Proxy #1: Setting Up the Development Environment"
 date: 2026-05-31T22:00:00+09:00
-draft: true
+draft: false
 tags: ["cncf", "envoy", "redis-proxy", "open-source"]
 series: "contribution_envoy"
 series_order: 2
