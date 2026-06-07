@@ -28,7 +28,7 @@ params:
     toc: true
     tocOpen: true
     tocSide: left
-    tocTitle: "목차"
+    tocTitle: "Agenda"
     showDate: true
     showAuthor: true
     showReadingTime: false
