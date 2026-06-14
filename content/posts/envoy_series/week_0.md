@@ -1,7 +1,7 @@
 ---
 title: "Envoy Proxy 기여 여정"
 date: 2026-05-19T22:00:00+09:00
-draft: true
+draft: false
 tags: ["cncf", "envoy", "redis-proxy"]
 series: "contribution_envoy"
 series_order: 1
