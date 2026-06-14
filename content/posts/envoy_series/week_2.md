@@ -1,5 +1,5 @@
 ---
-title: "Envoy Proxy 기여 여정 #2: 빌드 환경 구축 - 1"
+title: "[KR] Envoy Proxy 기여 여정 #2: 빌드 환경 구축 - 1"
 date: 2026-06-14T12:00:00+09:00
 # date: 2026-06-14T12:00:00+09:00
 draft: false

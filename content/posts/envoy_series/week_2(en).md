@@ -1,5 +1,5 @@
 ---
-title: "Contributing to Envoy Proxy #2: Setting Up the Build Environment — Part 1"
+title: "[EN] Contributing to Envoy Proxy #2: Setting Up the Build Environment — Part 1"
 date: 2026-06-14T12:00:00+09:00
 draft: false
 tags: ["cncf", "envoy", "redis-proxy"]

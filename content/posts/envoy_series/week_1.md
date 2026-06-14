@@ -1,5 +1,5 @@
 ---
-title: "Envoy Proxy 기여 여정 #1: 개발 환경 구축"
+title: "[KR] Envoy Proxy 기여 여정 #1: 개발 환경 구축"
 date: 2026-05-31T22:00:00+09:00
 draft: false
 tags: ["cncf", "envoy", "redis-proxy", "open-source"]
