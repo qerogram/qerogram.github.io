@@ -275,6 +275,10 @@ body::after {
   padding: 4px 12px; border-radius: 4px; white-space:nowrap; flex-shrink:0;
   animation: borderPulse 2s ease-in-out infinite;
 }
+.career-status-sub {
+  font-weight: 500; color: var(--text-dim); margin-left: 6px;
+  border: none; padding: 0; animation: none;
+}
 .career-red-status {
   font-family: var(--mono); font-size: 11px; font-weight: 700;
   background: linear-gradient(135deg, #ff6b6b, #ee5a52);
@@ -644,7 +648,7 @@ body::after {
     <div class="adv-card reveal">
       <div class="adv-year">2025</div>
       <div class="adv-id">Envoy Proxy</div>
-      <div class="adv-desc">Contributor<div class="career-status">● dev-stats : 20 points</div></div>
+      <div class="adv-desc">Contributor<div class="career-status">● dev-stats : <span data-devstats="contributions">47</span> points <span class="career-status-sub">(<span data-devstats="prs">7</span> PRs, <span data-devstats="issues">2</span> issues)</span></div></div>
     </div>
     <div class="adv-card reveal reveal-d1">
       <div class="adv-year">2026</div>
@@ -1100,6 +1104,28 @@ window.addEventListener('message', e => {
   if (e.data?.type === '__deactivate_edit_mode') document.getElementById('tweaksPanel').classList.remove('open');
 });
 window.parent.postMessage({type:'__edit_mode_available'}, '*');
+
+// DEVSTATS — auto-refresh the contributor points from devstats.cncf.io
+(async function refreshDevStats() {
+  const slots = document.querySelectorAll('[data-devstats]');
+  if (!slots.length) return;
+  try {
+    const res = await fetch('https://devstats.cncf.io/api/v1', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      referrer: 'https://devstats.cluster.fun/',
+      body: JSON.stringify({ api: 'GithubIDContributions', payload: { github_id: 'qerogram' } }),
+    });
+    if (!res.ok) throw new Error('devstats ' + res.status);
+    const data = await res.json();
+    slots.forEach(el => {
+      const key = el.getAttribute('data-devstats');
+      if (data && typeof data[key] === 'number') el.textContent = data[key];
+    });
+  } catch (err) {
+    console.warn('[devstats] refresh failed, keeping cached values:', err);
+  }
+})();
 </script>
 </body>
 </html>
