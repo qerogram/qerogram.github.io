@@ -11,6 +11,11 @@ params:
   
   author: ["Qerogram"]
 
+  enableRobotsTXT: true
+  sitemap:
+    changeFreq: monthly
+    priority: 0.5
+
   # 홈페이지 설정
   home:
     layout: "background"
@@ -70,3 +75,4 @@ menu:
     - name: Posts
       url: /posts
       weight: 20
+
