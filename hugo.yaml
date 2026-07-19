@@ -3,6 +3,10 @@ title: "Qerogram의 IT 삽질기 | Qerogram's IT Journal"
 locale: "ko-kr"
 theme: ["PaperMod"]
 
+sitemap:
+  changeFreq: monthly
+  priority: 0.5
+  
 params:
   description: "White Hat Hacker의 시각으로 바라본 Cloud, Development, Security 등 IT의 각분야 | Exploring various IT domains through a white-hat hacker's perspective"
   mainSections: ["posts"]
@@ -12,10 +16,6 @@ params:
   author: ["Qerogram"]
 
   enableRobotsTXT: true
-  sitemap:
-    changeFreq: monthly
-    priority: 0.5
-
   # 홈페이지 설정
   home:
     layout: "background"
