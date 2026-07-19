@@ -7,6 +7,12 @@ sitemap:
   changeFreq: monthly
   priority: 0.5
   
+outputs:
+  home: [HTML, RSS, sitemap]
+  section: [HTML, RSS, sitemap]
+  taxonomy: [HTML, RSS, sitemap]
+  term: [HTML, RSS, sitemap]
+  
 params:
   description: "White Hat Hacker의 시각으로 바라본 Cloud, Development, Security 등 IT의 각분야 | Exploring various IT domains through a white-hat hacker's perspective"
   mainSections: ["posts"]
