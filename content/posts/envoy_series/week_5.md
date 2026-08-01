@@ -1,7 +1,7 @@
 ---
 title: "[KR] Envoy Proxy 기여 여정 #5: Custom Envoy Proxy Deployment"
 date: 2026-07-26T12:00:00+09:00
-draft: true
+draft: false
 tags: ["cncf", "envoy", "redis-proxy", "open-source"]
 series: "contribution_envoy"
 series_order: 6
