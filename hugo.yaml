@@ -4,7 +4,7 @@ locale: "ko-kr"
 theme: ["PaperMod"]
 
 sitemap:
-  changeFreq: monthly
+  changefreq: monthly
   priority: 0.5
   
 outputs:
