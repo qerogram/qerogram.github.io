@@ -1,6 +1,6 @@
 ---
 title: "[KR] Envoy Proxy 기여 여정 #6: 이슈 분석 - bitfield_ro는 어디에 추가하는가"
-date: 2026-08-02T12:00:00+09:00
+date: 2026-08-09T12:00:00+09:00
 draft: false
 tags: ["cncf", "envoy", "redis-proxy", "open-source"]
 series: "contribution_envoy"

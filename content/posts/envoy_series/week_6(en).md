@@ -1,6 +1,6 @@
 ---
 title: "[EN] Contributing to Envoy Proxy #6: Issue Analysis — Where do we add bitfield_ro?"
-date: 2026-08-02T12:00:00+09:00
+date: 2026-08-09T12:00:00+09:00
 draft: false
 tags: ["cncf", "envoy", "redis-proxy", "open-source"]
 series: "contribution_envoy"
